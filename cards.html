@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cards | Horizon Bank</title>
+
+<link rel="stylesheet" href="../css/cards.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="cards-page">
+
+    <!-- HEADER -->
+
+    <div class="cards-header">
+
+        <div>
+
+            <h1>Card Management</h1>
+
+            <p>
+                Manage your physical and virtual cards.
+            </p>
+
+        </div>
+
+        <button class="new-card-btn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Create Virtual Card
+
+        </button>
+
+    </div>
+
+    <!-- CARD SHOWCASE -->
+
+    <div class="cards-showcase">
+
+        <!-- MAIN CARD -->
+
+        <div class="premium-card">
+
+            <div class="card-top">
+
+                <span>Horizon Bank</span>
+
+                <i class="fa-brands fa-cc-visa"></i>
+
+            </div>
+
+            <div class="card-number">
+
+                4532 •••• •••• 2044
+
+            </div>
+
+            <div class="card-bottom">
+
+                <div>
+
+                    <small>Card Holder</small>
+
+                    <h4>JOHN DOE</h4>
+
+                </div>
+
+                <div>
+
+                    <small>Expires</small>
+
+                    <h4>08/29</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- VIRTUAL CARD -->
+
+        <div class="virtual-card">
+
+            <div class="virtual-tag">
+
+                Virtual Card
+
+            </div>
+
+            <h3>Online Shopping Card</h3>
+
+            <p>
+                Separate secure card for online purchases.
+            </p>
+
+            <button>
+
+                View Details
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- CONTROLS -->
+
+    <div class="card-controls">
+
+        <!-- LEFT -->
+
+        <div class="settings-card">
+
+            <h2>Card Controls</h2>
+
+            <div class="toggle-item">
+
+                <span>Freeze Card</span>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+
+            </div>
+
+            <div class="toggle-item">
+
+                <span>Online Payments</span>
+
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+
+            </div>
+
+            <div class="toggle-item">
+
+                <span>Contactless Payments</span>
+
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+
+            </div>
+
+            <div class="toggle-item">
+
+                <span>International Usage</span>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="settings-card">
+
+            <h2>Spending Limits</h2>
+
+            <div class="limit-box">
+
+                <label>Daily Limit</label>
+
+                <input
+                    type="number"
+                    value="5000">
+
+            </div>
+
+            <div class="limit-box">
+
+                <label>ATM Withdrawal Limit</label>
+
+                <input
+                    type="number"
+                    value="1000">
+
+            </div>
+
+            <button class="save-limit-btn">
+
+                Save Limits
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- QUICK ACTIONS -->
+
+    <div class="quick-card-actions">
+
+        <div class="action-box">
+
+            <i class="fa-solid fa-lock"></i>
+
+            <h3>Change PIN</h3>
+
+        </div>
+
+        <div class="action-box">
+
+            <i class="fa-solid fa-copy"></i>
+
+            <h3>Reveal Details</h3>
+
+        </div>
+
+        <div class="action-box">
+
+            <i class="fa-solid fa-ban"></i>
+
+            <h3>Block Card</h3>
+
+        </div>
+
+        <div class="action-box">
+
+            <i class="fa-solid fa-repeat"></i>
+
+            <h3>Replace Card</h3>
+
+        </div>
+
+    </div>
+
+    <!-- TRANSACTIONS -->
+
+    <div class="card-transactions">
+
+        <h2>Recent Card Activity</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Date</th>
+                    <th>Merchant</th>
+                    <th>Card</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>09 Jun</td>
+
+                    <td>Amazon</td>
+
+                    <td>Visa •2044</td>
+
+                    <td>
+                        <span class="card-success">
+                            Approved
+                        </span>
+                    </td>
+
+                    <td>-£120</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>08 Jun</td>
+
+                    <td>Apple</td>
+
+                    <td>Virtual</td>
+
+                    <td>
+                        <span class="card-success">
+                            Approved
+                        </span>
+                    </td>
+
+                    <td>-£50</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>06 Jun</td>
+
+                    <td>Steam</td>
+
+                    <td>Virtual</td>
+
+                    <td>
+                        <span class="card-failed">
+                            Declined
+                        </span>
+                    </td>
+
+                    <td>-£35</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

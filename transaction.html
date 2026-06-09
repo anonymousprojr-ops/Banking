@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Transactions | Horizon Bank</title>
+
+<link rel="stylesheet" href="../css/transaction.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="transaction-page">
+
+    <!-- HEADER -->
+
+    <div class="transaction-header">
+
+        <div>
+
+            <h1>Transaction History</h1>
+
+            <p>
+                View and manage all your account activities.
+            </p>
+
+        </div>
+
+        <div class="export-buttons">
+
+            <button>
+                <i class="fa-solid fa-file-pdf"></i>
+                Export PDF
+            </button>
+
+            <button>
+                <i class="fa-solid fa-file-csv"></i>
+                Export CSV
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- SUMMARY CARDS -->
+
+    <div class="summary-grid">
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-arrow-down"></i>
+
+            <h3>Total Income</h3>
+
+            <h2>£12,450</h2>
+
+        </div>
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-arrow-up"></i>
+
+            <h3>Total Expenses</h3>
+
+            <h2>£4,280</h2>
+
+        </div>
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-wallet"></i>
+
+            <h3>Net Balance</h3>
+
+            <h2>£8,170</h2>
+
+        </div>
+
+    </div>
+
+    <!-- FILTERS -->
+
+    <div class="filters">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search transactions...">
+
+        </div>
+
+        <input type="date">
+
+        <select>
+
+            <option>All Status</option>
+
+            <option>Completed</option>
+
+            <option>Pending</option>
+
+            <option>Failed</option>
+
+        </select>
+
+    </div>
+
+    <!-- TABLE -->
+
+    <div class="transaction-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>#HB001</td>
+
+                    <td>09 Jun 2026</td>
+
+                    <td>Amazon Purchase</td>
+
+                    <td>Shopping</td>
+
+                    <td>
+                        <span class="status completed">
+                            Completed
+                        </span>
+                    </td>
+
+                    <td class="expense">
+                        -£120
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>#HB002</td>
+
+                    <td>08 Jun 2026</td>
+
+                    <td>Monthly Salary</td>
+
+                    <td>Income</td>
+
+                    <td>
+                        <span class="status completed">
+                            Completed
+                        </span>
+                    </td>
+
+                    <td class="income">
+                        +£3,000
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>#HB003</td>
+
+                    <td>07 Jun 2026</td>
+
+                    <td>Netflix</td>
+
+                    <td>Subscription</td>
+
+                    <td>
+                        <span class="status pending">
+                            Pending
+                        </span>
+                    </td>
+
+                    <td class="expense">
+                        -£12
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>#HB004</td>
+
+                    <td>06 Jun 2026</td>
+
+                    <td>Transfer to Emma</td>
+
+                    <td>Transfer</td>
+
+                    <td>
+                        <span class="status failed">
+                            Failed
+                        </span>
+                    </td>
+
+                    <td class="expense">
+                        -£200
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>#HB005</td>
+
+                    <td>05 Jun 2026</td>
+
+                    <td>Spotify</td>
+
+                    <td>Subscription</td>
+
+                    <td>
+                        <span class="status completed">
+                            Completed
+                        </span>
+                    </td>
+
+                    <td class="expense">
+                        -£10
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- PAGINATION -->
+
+    <div class="pagination">
+
+        <button>
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <button class="active-page">
+            1
+        </button>
+
+        <button>2</button>
+
+        <button>3</button>
+
+        <button>
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Loans | Horizon Bank</title>
+
+<link rel="stylesheet" href="../css/lloans.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="loans-page">
+
+    <!-- HEADER -->
+
+    <div class="loans-header">
+
+        <div>
+
+            <h1>Loans & Credit</h1>
+
+            <p>
+                Manage existing loans and apply for new financing.
+            </p>
+
+        </div>
+
+        <button class="apply-loan-btn">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Apply For Loan
+
+        </button>
+
+    </div>
+
+    <!-- LOAN PRODUCTS -->
+
+    <div class="loan-products">
+
+        <div class="loan-product">
+
+            <i class="fa-solid fa-house"></i>
+
+            <h3>Mortgage Loan</h3>
+
+            <p>From 4.5% APR</p>
+
+            <button>Apply</button>
+
+        </div>
+
+        <div class="loan-product">
+
+            <i class="fa-solid fa-car"></i>
+
+            <h3>Auto Loan</h3>
+
+            <p>From 3.9% APR</p>
+
+            <button>Apply</button>
+
+        </div>
+
+        <div class="loan-product">
+
+            <i class="fa-solid fa-briefcase"></i>
+
+            <h3>Business Loan</h3>
+
+            <p>From 6.2% APR</p>
+
+            <button>Apply</button>
+
+        </div>
+
+        <div class="loan-product">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3>Personal Loan</h3>
+
+            <p>From 5.1% APR</p>
+
+            <button>Apply</button>
+
+        </div>
+
+    </div>
+
+    <!-- ACTIVE LOAN -->
+
+    <div class="loan-overview">
+
+        <div class="active-loan-card">
+
+            <h2>Active Loan</h2>
+
+            <h1>£25,000</h1>
+
+            <p>Personal Loan</p>
+
+            <div class="progress-wrapper">
+
+                <div class="loan-progress"></div>
+
+            </div>
+
+            <small>62% Repaid</small>
+
+        </div>
+
+        <div class="loan-stats">
+
+            <div class="loan-stat">
+
+                <span>Monthly Payment</span>
+
+                <h3>£420</h3>
+
+            </div>
+
+            <div class="loan-stat">
+
+                <span>Remaining Balance</span>
+
+                <h3>£9,500</h3>
+
+            </div>
+
+            <div class="loan-stat">
+
+                <span>Next Due Date</span>
+
+                <h3>25 Jun 2026</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- EMI CALCULATOR -->
+
+    <div class="loan-tools">
+
+        <div class="emi-calculator">
+
+            <h2>Loan Calculator</h2>
+
+            <input
+                type="number"
+                placeholder="Loan Amount">
+
+            <input
+                type="number"
+                placeholder="Interest Rate (%)">
+
+            <input
+                type="number"
+                placeholder="Years">
+
+            <button>
+                Calculate
+            </button>
+
+        </div>
+
+        <div class="loan-chart">
+
+            <h2>Repayment Progress</h2>
+
+            <canvas id="loanChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <!-- PAYMENT HISTORY -->
+
+    <div class="repayment-history">
+
+        <h2>Repayment History</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Date</th>
+                    <th>Loan</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>25 May 2026</td>
+
+                    <td>Personal Loan</td>
+
+                    <td>
+                        <span class="paid">
+                            Paid
+                        </span>
+                    </td>
+
+                    <td>£420</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>25 Apr 2026</td>
+
+                    <td>Personal Loan</td>
+
+                    <td>
+                        <span class="paid">
+                            Paid
+                        </span>
+                    </td>
+
+                    <td>£420</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>25 Mar 2026</td>
+
+                    <td>Personal Loan</td>
+
+                    <td>
+                        <span class="paid">
+                            Paid
+                        </span>
+                    </td>
+
+                    <td>£420</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script>
+
+const ctx = document.getElementById('loanChart');
+
+new Chart(ctx, {
+
+type: 'doughnut',
+
+data: {
+
+labels: ['Paid','Remaining'],
+
+datasets: [{
+
+data:[62,38],
+
+backgroundColor:[
+'#7B2CBF',
+'#E5D9FA'
+]
+
+}]
+}
+
+});
+
+</script>
+
+</body>
+
+</html>

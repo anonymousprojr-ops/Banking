@@ -1,0 +1,128 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+.transfer-page{
+padding:15px;
+}
+
+.transfer-layout{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.transfer-form-card,
+.transfer-summary,
+.beneficiaries,
+.recent-transfers{
+background:white;
+padding:20px;
+border-radius:20px;
+}
+
+.input-group{
+margin-bottom:15px;
+}
+
+.input-group label{
+display:block;
+margin-bottom:6px;
+}
+
+.input-group input,
+.input-group select{
+width:100%;
+padding:14px;
+border:1px solid #ddd;
+border-radius:12px;
+}
+
+.send-money-btn{
+width:100%;
+background:#7B2CBF;
+color:white;
+border:none;
+padding:15px;
+border-radius:12px;
+}
+
+.beneficiary{
+display:flex;
+align-items:center;
+gap:10px;
+padding:10px 0;
+}
+
+.avatar{
+width:45px;
+height:45px;
+background:#7B2CBF;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (min-width:768px){
+
+.transfer-page{
+    padding:25px;
+}
+
+.transfer-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+.transfer-form-card{
+    grid-row:span 2;
+}
+
+}
+
+/* Laptops */
+@media (min-width:1024px){
+
+.transfer-page{
+    max-width:1400px;
+    margin:auto;
+    padding:35px;
+}
+
+.transfer-layout{
+    grid-template-columns:2.5fr 1fr;
+    gap:30px;
+}
+
+.transfer-form-card,
+.transfer-summary,
+.beneficiaries,
+.recent-transfers{
+    padding:30px;
+}
+
+}
+
+/* Large Screens */
+@media (min-width:1440px){
+
+.transfer-layout{
+    grid-template-columns:3fr 1fr;
+}
+
+}
